@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/aws-tester-project/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/aws-tester-project/static/js/main.41e9b38a.chunk.js",
+    "main.js.map": "/aws-tester-project/static/js/main.41e9b38a.chunk.js.map",
+    "runtime-main.js": "/aws-tester-project/static/js/runtime-main.02bff158.js",
+    "runtime-main.js.map": "/aws-tester-project/static/js/runtime-main.02bff158.js.map",
+    "static/css/2.dbecbe62.chunk.css": "/aws-tester-project/static/css/2.dbecbe62.chunk.css",
+    "static/js/2.36bad37e.chunk.js": "/aws-tester-project/static/js/2.36bad37e.chunk.js",
+    "static/js/2.36bad37e.chunk.js.map": "/aws-tester-project/static/js/2.36bad37e.chunk.js.map",
+    "index.html": "/aws-tester-project/index.html",
+    "precache-manifest.134901023c3784d444f615c086ca12a9.js": "/aws-tester-project/precache-manifest.134901023c3784d444f615c086ca12a9.js",
+    "service-worker.js": "/aws-tester-project/service-worker.js",
+    "static/css/2.dbecbe62.chunk.css.map": "/aws-tester-project/static/css/2.dbecbe62.chunk.css.map",
+    "static/css/main.27fd15f6.chunk.css.map": "/aws-tester-project/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.36bad37e.chunk.js.LICENSE.txt": "/aws-tester-project/static/js/2.36bad37e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02bff158.js",
+    "static/css/2.dbecbe62.chunk.css",
+    "static/js/2.36bad37e.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.41e9b38a.chunk.js"
+  ]
+}
