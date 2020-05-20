@@ -17,8 +17,11 @@ import Footer from './footer.js';
 import CustomAuthenticator from './auth/custom-authenticator';
 import appStore from './common/app-store';
 import useStyles from './common/material-ui-styles.js';
+import Config from './common/config';
+
 import UserInfo from './widgets/user-info';
 import Ec2DescribeInstances from './widgets/ec2-describe-instances';
+import AwsCliProxy from './widgets/aws-cli-proxy';
 
 const Body = view(() => {
 
@@ -68,13 +71,23 @@ const SignedInBody = view(() => {
       component: UserInfo,
       displayName: 'Cognito Info',
       id: 'cognito-info',
-      displayOnFirstLoad: true
+      displayOnFirstLoad: false
     },
     {
       component: Ec2DescribeInstances,
       displayName: 'EC2 Instances',
       id: 'ec2-instances',
       displayOnFirstLoad: false
+    },
+    {
+      component: AwsCliProxy,
+      displayName: 'Serverless AWS CLI',
+      id: 'serverless-cli',
+      displayOnFirstLoad: true,
+      params: {
+        functionName: Config.awsCliFunctionName
+      }
+      
     },
   ];
 
@@ -102,7 +115,8 @@ const SignedInBody = view(() => {
         {/* ------- This is where you put the body after user is authenticated ---------*/}
         {widgets.map((widget, index) => {
           if (checkboxState[index] === true) {
-            return React.createElement(widget.component, { key: widget.id });
+            
+            return React.createElement(widget.component, { key: widget.id, params: (widget.params || {}) });
           }
           else {
             return null;
